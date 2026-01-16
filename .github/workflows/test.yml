@@ -27,9 +27,6 @@ jobs:
     name: Unit Tests
     runs-on: ubuntu-latest
     needs: code-quality
-    strategy:
-      matrix:
-        python-version: [ "3.12", "3.13", "3.14" ]
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
@@ -40,13 +37,13 @@ jobs:
           pixi-version: v0.62.2
 
       - name: Run pytest with coverage
-        run: pixi run pytest --cov=src/pkoffee --cov-report=xml --cov-report=html --cov-report=term
+        run: pixi run pytest --cov=pkoffee --cov-report=xml --cov-report=html --cov-report=term
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: coverage-report-py${{ matrix.python-version }}
+          name: coverage-report
           path: htmlcov/
 
       - name: Upload coverage to Codecov
@@ -55,7 +52,6 @@ jobs:
         with:
           files: ./coverage.xml
           flags: unittests
-          name: py${{ matrix.python-version }}
 
   documentation:
     name: Documentation Build
