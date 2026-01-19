@@ -1,0 +1,29 @@
+name: Deliver results
+on: [push] # for now,  to get latest results
+
+jobs:
+  make-plot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v6
+
+      - name: Install pixi
+        uses: prefix-dev/setup-pixi@v0.9.3
+        with:
+          pixi-version: v0.62.2 # good to pin this since pixi is not 1.0 yet!
+
+      - name: run analysis
+        run: |
+          cd analysis
+          pixi run pkoffee analyze --data-file coffee_productivity.csv --output fitted_models.toml --show-rankings
+          pixi run pkoffee plot --data-file coffee_productivity.csv --models fitted_models.toml --output analysis.png --y-max 7
+
+      - name: upload results
+        uses: actions/upload-artifact@v6
+        with:
+          name: results
+          path: |
+            analysis/analysis.png
+            analysis/fitted_models.toml
