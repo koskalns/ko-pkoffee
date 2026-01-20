@@ -17,6 +17,8 @@ matplotlib = ">=3.10.8,<4"
 pytest = ">=9.0.2,<10"
 pytest-cov = ">=7.0.0,<8"
 snakeviz = ">=2.2.2,<3"
+sphinx = ">=8.2.3,<9"
+sphinx_rtd_theme = ">=3.0.2,<4"
 
 [package]
 name = "pkoffee"
@@ -78,3 +80,6 @@ prod314 = { features = ["py314"], solve-group = "prod314" }
 
 # python 3.12 environments for testing
 prod312 = { features = ["py312"], solve-group = "prod312" }
+
+[tasks.docs-build]
+cmd = "sphinx-build -b html docs docs/_build/html"
