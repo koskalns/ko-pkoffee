@@ -19,6 +19,7 @@ pytest-cov = ">=7.0.0,<8"
 snakeviz = ">=2.2.2,<3"
 sphinx = ">=8.2.3,<9"
 sphinx_rtd_theme = ">=3.0.2,<4"
+python = ">=3.12.12,<3.15"
 
 [package]
 name = "pkoffee"
