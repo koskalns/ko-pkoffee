@@ -5,6 +5,18 @@
 ![Quality](https://img.shields.io/badge/quality-A++-brightpink)
 A Conda package implemented in python for analyzing the relationship between coffee consumption and productivity through statistical modeling and visualization.
 
+## Citation
+
+If you use this software, please cite it using the metadata in [CITATION.cff](./citation.cff):
+
+```bibtex
+@software{vuillaume2026pkoffee,
+  title={PKoffee: Coffee Productivity Analysis with Statistical Modeling},
+  author={Vuillaume, Thomas and Pollet, Vincent},
+  year={2026},
+  url={https://github.com/s3-school/pkoffee}
+}
+
 ## Features
 
 - **Data Analysis**: Load and analyze coffee consumption vs productivity datasets
