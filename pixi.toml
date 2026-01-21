@@ -20,6 +20,8 @@ snakeviz = ">=2.2.2,<3"
 sphinx = ">=8.2.3,<9"
 sphinx_rtd_theme = ">=3.0.2,<4"
 python = ">=3.12.12,<3.15"
+ty = ">=0.0.12,<0.0.13"
+bandit = ">=1.9.3,<2"
 
 [package]
 name = "pkoffee"

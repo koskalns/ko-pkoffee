@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: pkoffee
+message: "If you use this software, please cite it using these metadata."
+type: software
+authors:
+  - family-names: "Vuillaume"
+    given-names: "Thomas"
+    email: "thomas.vuillaume@lapp.in2p3.fr"
+  - family-names: "Pollet"
+    given-names: "Vincent"
+    email: "vincent.pollet@lapp.in2p3.fr"
+license: MIT
+repository-code: "https://github.com/s3-school/pkoffee"
+keywords:
+  - "coffee productivity"
+  - "statistical modeling"
+  - "analysis"
+abstract: "Coffee productivity analysis with statistical modeling"
+version: 0.1.0
+date-released: 2026-01-21
