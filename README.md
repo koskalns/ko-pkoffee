@@ -4,7 +4,17 @@
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 ![Quality](https://img.shields.io/badge/quality-A++-brightpink)
 A Conda package implemented in python for analyzing the relationship between coffee consumption and productivity through statistical modeling and visualization.
+## Citation
 
+If you use this software, please cite it as:
+
+```bibtex
+@software{vuillaume2026pkoffee,
+  title={pkoffee: Coffee productivity analysis with statistical modeling},
+  author={Vuillaume, Thomas and Pollet, Vincent},
+  year={2026},
+  url={https://github.com/s3-school/pkoffee}
+}
 Project inspired by _Le Café - Oldelaf_ for the S3 School 2026.
 
 [![Le Café - Oldelaf - on YouTube](http://img.youtube.com/vi/UGtKGX8B9hU/0.jpg)](http://www.youtube.com/watch?v=UGtKGX8B9hU "Le Café - Oldelaf")
