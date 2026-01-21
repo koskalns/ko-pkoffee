@@ -2,7 +2,7 @@
 [![Test](https://github.com/koskalns/ko-pkoffee/actions/workflows/test.yml/badge.svg)](https://github.com/koskalns/ko-pkoffee/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-
+![Quality](https://img.shields.io/badge/quality-A++-brightpink)
 A Conda package implemented in python for analyzing the relationship between coffee consumption and productivity through statistical modeling and visualization.
 
 Project inspired by _Le Café - Oldelaf_ for the S3 School 2026.
